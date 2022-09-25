@@ -11,43 +11,47 @@
 </head>
 <body>
   <div class="container">
+    <div class="header">
       <h2>calc</h2>
+      
+
+    </div>
     
     <form id="form">
 
-      <section class="res">
+      <section class="resSection">
         <input id="result" value="0" /disabled>
       </section>
   
-      <section class="keys">
+      <section class="keyPad">
         <table>
           <tr>
-            <td><input type="button" onclick="form.result.value+='7'" value="7"></td>
-            <td><input type="button" onclick="form.result.value+='8'" value="8"></td>
-            <td><input type="button" onclick="form.result.value+='9'" value="9"></td>
-            <td><input type="button" class="del" onclick="form.result.value=form.result.value.substring(0,form.result.value.length-1)" value="DEL"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='7'" value="7"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='8'" value="8"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='9'" value="9"></td>
+            <td><input type="button" class="button del" onclick="form.result.value=form.result.value.substring(0,form.result.value.length-1)" value="DEL"></td>
           </tr>
           <tr>
-            <td><input type="button" onclick="form.result.value+='4'" value="4"></td>
-            <td><input type="button" onclick="form.result.value+='5'" value="5"></td>
-            <td><input type="button" onclick="form.result.value+='6'" value="6"></td>
-            <td><input type="button" onclick="form.result.value+='+'" value="+"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='4'" value="4"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='5'" value="5"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='6'" value="6"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='+'" value="+"></td>
           </tr>
           <tr>
-            <td><input type="button" onclick="form.result.value+='1'" value="1"></td>
-            <td><input type="button" onclick="form.result.value+='2'" value="2"></td>
-            <td><input type="button" onclick="form.result.value+='3'" value="3"></td>
-            <td><input type="button" onclick="form.result.value+='-'" value="-"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='1'" value="1"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='2'" value="2"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='3'" value="3"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='-'" value="-"></td>
           </tr>
           <tr>
-            <td><input type="button" onclick="form.result.value+='.'" value="."></td>
-            <td><input type="button" onclick="form.result.value+='0'" value="0"></td>
-            <td><input type="button" onclick="form.result.value+='/'" value="/"></td>
-            <td><input type="button" onclick="form.result.value+='*'" value="x"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='.'" value="."></td>
+            <td><input class="button" type="button" onclick="form.result.value+='0'" value="0"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='/'" value="/"></td>
+            <td><input class="button" type="button" onclick="form.result.value+='*'" value="x"></td>
           </tr>
           <tr>
-            <td colspan="2"><input type="button" class="reset" onclick="form.result.value='0'" value="RESET"></td>
-            <td colspan="2"><input type="button" class="cal" onclick="form.result.value=eval(form.result.value)" value="="></td>
+            <td colspan="2"><input type="button" class="button reset" onclick="form.result.value='0'" value="RESET"></td>
+            <td colspan="2"><input type="button" class="button cal" onclick="form.result.value=eval(form.result.value)" value="="></td>
           </tr>
         </table>
       </section>
@@ -60,5 +64,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Aastha Aggarwal</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
